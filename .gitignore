@@ -59,3 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 /BCIJam_2022/Builds/
+BCIJam_2022/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta
+BCIJam_2022/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta
+BCIJam_2022/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta
+BCIJam_2022/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta
