@@ -142,11 +142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
-      value: 3.912796
+      value: 4.068247
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
-      value: 3.912796
+      value: 4.068247
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Pivot.x
@@ -238,7 +238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
-      value: 3.912796
+      value: 4.068247
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269572393bf885742a4dd20168bb2590, type: 3}
@@ -517,11 +517,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
-      value: 3.912796
+      value: 4.068247
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
-      value: 3.912796
+      value: 4.068247
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Pivot.x
@@ -645,10 +645,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
-      value: 3.912796
+      value: 4.068247
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+--- !u!1 &1271916462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1447376955, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
+  m_PrefabInstance: {fileID: 5048580093071283594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1277841508
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277841509}
   - component: {fileID: 1277841510}
+  - component: {fileID: 1277841511}
   m_Layer: 5
   m_Name: GameImageSprite
   m_TagString: Untagged
@@ -675,7 +681,7 @@ RectTransform:
   m_GameObject: {fileID: 1277841508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4.310345, y: 4.310345, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1447376956}
@@ -727,17 +733,62 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: da545229eea36164d8b8cba2f75a1143, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.9, y: 2.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1277841511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277841508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45b6165deb994247a24e1e4d79df850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateAtRuntime: 1
+  updateOnValidate: 1
+  propagateToChildren: 1
+  debugUpdateRealtimeEditor: 0
+  debug: 0
+  affectShapesPolygon: 0
+  affectShapesRectangle: 0
+  affectShapesDisc: 0
+  affectShapesLine: 0
+  affectBoxCollider: 0
+  affectCircleCollider: 0
+  affectSpriteRenderer: 1
+  polygonOriginIsCorner: 1
+  polyPoints: []
+  affectShapesRectangleGradient: 0
+  linearGradientDirection: 0
+  radialGradientNormalizedSize: 0
+  affectShapesRectangleCorners: 0
+  cornerRadiusUL: 0
+  cornerRadiusUR: 0
+  cornerRadiusLL: 0
+  cornerRadiusLR: 0
+  controlLineThickness: 0
+  lineThickness: 0
+  controlLinePosition: 0
+  lineAnchorStart: {x: 0, y: 0}
+  lineAnchorEnd: {x: 0, y: 0}
+  pixelOffsetX: 0
+  pixelOffsetY: 0
+  preserveSpriteAspect: 1
+  controlDiscRadius: 0
+  controlDiscThickness: 0
+  discThicknessScale: 0
 --- !u!1 &1340118854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6204130249427355750, guid: 269572393bf885742a4dd20168bb2590, type: 3}
@@ -760,6 +811,51 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1447376956, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
   m_PrefabInstance: {fileID: 5048580093071283594}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1447376958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271916462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45b6165deb994247a24e1e4d79df850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateAtRuntime: 1
+  updateOnValidate: 1
+  propagateToChildren: 1
+  debugUpdateRealtimeEditor: 0
+  debug: 0
+  affectShapesPolygon: 0
+  affectShapesRectangle: 0
+  affectShapesDisc: 0
+  affectShapesLine: 0
+  affectBoxCollider: 0
+  affectCircleCollider: 0
+  affectSpriteRenderer: 0
+  polygonOriginIsCorner: 1
+  polyPoints: []
+  affectShapesRectangleGradient: 0
+  linearGradientDirection: 0
+  radialGradientNormalizedSize: 0
+  affectShapesRectangleCorners: 0
+  cornerRadiusUL: 0
+  cornerRadiusUR: 0
+  cornerRadiusLL: 0
+  cornerRadiusLR: 0
+  controlLineThickness: 0
+  lineThickness: 0
+  controlLinePosition: 0
+  lineAnchorStart: {x: 0, y: 0}
+  lineAnchorEnd: {x: 0, y: 0}
+  pixelOffsetX: 0
+  pixelOffsetY: 0
+  preserveSpriteAspect: 0
+  controlDiscRadius: 0
+  controlDiscThickness: 0
+  discThicknessScale: 0
 --- !u!1 &1959959315
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +1017,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 16.303318
+  width: 16.951027
   height: 10
   type: 0
   cornerRadiusMode: 0
@@ -966,6 +1062,10 @@ PrefabInstance:
     - target: {fileID: 1885742330, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
       propertyPath: m_SortingLayerID
       value: -1788295829
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885742332, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
+      propertyPath: width
+      value: 16.951027
       objectReference: {fileID: 0}
     - target: {fileID: 1885742332, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
       propertyPath: color.b
@@ -1062,11 +1162,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
-      value: 3.9127965
+      value: 4.0682464
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
-      value: 3.9127965
+      value: 4.0682464
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249427355748, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: debugUpdateRealtimeEditor
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Pivot.x
@@ -1158,7 +1262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
-      value: 3.9127965
+      value: 4.0682464
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 269572393bf885742a4dd20168bb2590, type: 3}
