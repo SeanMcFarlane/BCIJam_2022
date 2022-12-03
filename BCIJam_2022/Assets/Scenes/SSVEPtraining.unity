@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &192238128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.55
+  m_fontSize: 14.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -659,6 +659,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1885742332, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
+      propertyPath: color.a
+      value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885742332, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885742332, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885742332, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1278217040044572728, guid: 5b9db34b4a4aaea418ef428fbf314b9f, type: 3}
       propertyPath: m_Name
       value: CameraHolder

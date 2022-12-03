@@ -54,11 +54,8 @@ sysinfo.txt
 
 # Builds
 *.apk
-*.unitypackage
 
 # Crashlytics generated file
 crashlytics-build.properties
 
 /BCIJam_2022/Builds/
-
-.gitconfig

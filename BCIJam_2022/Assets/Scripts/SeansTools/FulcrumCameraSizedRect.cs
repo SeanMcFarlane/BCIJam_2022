@@ -65,7 +65,7 @@ public class FulcrumCameraSizedRect : MonoBehaviour {
 		}
 
 		o_Rect.SetParent(mainCamera.transform);
-		transform.localPosition = Vector3.forward;
+		transform.localPosition = new Vector3(0.0f, 0.0f, transform.localPosition.z);
 		o_Rect.sizeDelta = desiredScaling;
 	}
 }
