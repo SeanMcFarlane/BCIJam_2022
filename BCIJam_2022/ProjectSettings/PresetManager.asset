@@ -11,5 +11,5 @@ PresetManager:
       m_ManagedTypeFallback: 
     second:
     - m_Preset: {fileID: 2655988077585873504, guid: 60dbd76ff684d3b4fa43e5ed0b768101, type: 2}
-      m_Filter: DefaultSpriteFormat
+      m_Filter: 
       m_Disabled: 0
