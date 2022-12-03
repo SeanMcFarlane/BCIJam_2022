@@ -3,4 +3,10 @@ two
 three
 four
 five
+<<<<<<< HEAD
 Hi other merge conflict
+=======
+Hi sean
+Hi merge conflict
+truck you
+>>>>>>> 018693e95882d986e975693f346d7e4c239d7a25
