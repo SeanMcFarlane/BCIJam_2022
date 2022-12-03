@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 21780989}
   - component: {fileID: 21780991}
   - component: {fileID: 21780990}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MainFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,8 +157,8 @@ RectTransform:
   - {fileID: 1917395178}
   - {fileID: 1073748772}
   - {fileID: 1810424319}
-  m_Father: {fileID: 5484252457167744704}
-  m_RootOrder: 1
+  m_Father: {fileID: 1456386499}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 176813362}
   - component: {fileID: 176813361}
   - component: {fileID: 176813360}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quadrant_3[RightShipStern]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 213063360}
   - component: {fileID: 213063359}
   - component: {fileID: 213063358}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quadrant_4[RightShipBow]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   - component: {fileID: 641860244}
   - component: {fileID: 641860243}
   - component: {fileID: 641860242}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quadrant_2[LeftShipBow]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 771498608}
   - component: {fileID: 771498607}
   - component: {fileID: 771498606}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShieldsOuterEdge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 816779912}
   - component: {fileID: 816779911}
   - component: {fileID: 816779910}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShieldsInner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1204,7 +1204,7 @@ GameObject:
   - component: {fileID: 829817302}
   - component: {fileID: 829817304}
   - component: {fileID: 829817303}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShipSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 925670159}
   - component: {fileID: 925670158}
   - component: {fileID: 925670157}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: BorderTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1529,7 +1529,7 @@ GameObject:
   - component: {fileID: 953402899}
   - component: {fileID: 953402898}
   - component: {fileID: 953402897}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Shields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1670,7 +1670,7 @@ GameObject:
   - component: {fileID: 1015245575}
   - component: {fileID: 1015245574}
   - component: {fileID: 1015245573}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShieldsInner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1809,7 +1809,7 @@ GameObject:
   - component: {fileID: 1073748775}
   - component: {fileID: 1073748774}
   - component: {fileID: 1073748773}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: LeftHalf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,7 +1998,7 @@ GameObject:
   - component: {fileID: 1096844390}
   - component: {fileID: 1096844392}
   - component: {fileID: 1096844391}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShipSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   - component: {fileID: 1313200610}
   - component: {fileID: 1313200609}
   - component: {fileID: 1313200608}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Shields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2438,7 +2438,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 21780989}
   m_Father: {fileID: 6766370745090368290}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2581,7 +2582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668960825}
   - component: {fileID: 1668960826}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: LeftShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2667,7 +2668,7 @@ GameObject:
   - component: {fileID: 1725684860}
   - component: {fileID: 1725684859}
   - component: {fileID: 1725684858}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Quadrant_1[LeftShipStern]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2854,7 +2855,7 @@ GameObject:
   - component: {fileID: 1753254275}
   - component: {fileID: 1753254274}
   - component: {fileID: 1753254273}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShieldsInner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +2994,7 @@ GameObject:
   - component: {fileID: 1810424322}
   - component: {fileID: 1810424321}
   - component: {fileID: 1810424320}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: RightHalf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3182,7 +3183,7 @@ GameObject:
   - component: {fileID: 1917395178}
   - component: {fileID: 1917395180}
   - component: {fileID: 1917395179}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TextMeshProTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3355,7 +3356,7 @@ GameObject:
   - component: {fileID: 1953528895}
   - component: {fileID: 1953528894}
   - component: {fileID: 1953528893}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShieldsOuterEdge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3490,7 +3491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077927854}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: LeftShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3530,7 +3531,7 @@ GameObject:
   - component: {fileID: 2118468194}
   - component: {fileID: 2118468193}
   - component: {fileID: 2118468192}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShieldsInner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3668,42 +3669,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c4f65cf5139e54c8495e2b761b1d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &5048580093914017201
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5048580093914017206}
-  m_Layer: 5
-  m_Name: MainFrame
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &5048580093914017206
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5048580093914017201}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5484252457167744704}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 16.951027, y: 10}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &5484252457167744704
 Transform:
   m_ObjectHideFlags: 0
@@ -3715,9 +3680,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5048580093914017206}
-  - {fileID: 21780989}
+  m_Children: []
   m_Father: {fileID: 6766370745090368290}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
