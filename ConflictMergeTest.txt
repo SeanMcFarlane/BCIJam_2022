@@ -3,4 +3,4 @@ two
 three
 four
 five
-Hi merge conflict
+Hi other merge conflict
