@@ -20,13 +20,17 @@ public class StatusBarUI : MonoBehaviour {
 		if(fillDirection == FillDirection.Horizontal) {
 			fillRect.anchorMax = new Vector2(fillAmount, fillRect.anchorMax.y);
 		}
-		else {
+		else if(fillDirection == FillDirection.Vertical) {
 			fillRect.anchorMax = new Vector2(fillRect.anchorMax.x, fillAmount);
+		}
+		else if(fillDirection == FillDirection.ReverseHorizontal) {
+			fillRect.anchorMin = new Vector2(1.0f-fillAmount, fillRect.anchorMin.y);
 		}
 	}
 
 	public enum FillDirection {
 		Horizontal,
-		Vertical
+		Vertical,
+		ReverseHorizontal
 	}
 }
