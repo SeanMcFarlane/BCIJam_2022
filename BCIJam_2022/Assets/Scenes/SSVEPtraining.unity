@@ -1787,6 +1787,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1073748772}
     m_Modifications:
+    - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1200
+      objectReference: {fileID: 0}
     - target: {fileID: 902458633801205560, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1899,6 +1907,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1200
+      objectReference: {fileID: 0}
     - target: {fileID: 3497943210516779996, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -1906,6 +1930,22 @@ PrefabInstance:
     - target: {fileID: 3497943210516779996, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_SortingLayerID
       value: -1893048857
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028665229807116433, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1829834
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866769205755728813, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.15795898
       objectReference: {fileID: 0}
     - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: enemyShip
