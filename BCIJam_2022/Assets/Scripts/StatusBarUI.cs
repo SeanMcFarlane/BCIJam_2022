@@ -11,7 +11,6 @@ public class StatusBarUI : MonoBehaviour {
 	public FillDirection fillDirection = FillDirection.Horizontal;
 
 	public void Update() {
-		fillAmount -= 0.1f*Time.deltaTime;
 		UpdateUI();
 	}
 

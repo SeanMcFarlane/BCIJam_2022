@@ -15,6 +15,11 @@ public class PlayerShip : MonoBehaviour {
 	[ReadOnly] public bool shieldsOnline = false;
 	[ReadOnly] public bool reloading = false;
 
+	public StatusBarUI healthBarUI;
+	public StatusBarUI shieldsBarUI;
+	public StatusBarUI reloadBarUI;
+
+
 	public Transform[] shootPoints;
 	public Transform turretPivot;
 
@@ -55,7 +60,7 @@ public class PlayerShip : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate() {
-		if(shieldsOnline) {
+		if(!shieldsOnline) {
 			shieldFuel += SHIELD_REFUEL_RATE*Time.fixedDeltaTime;
 			shieldFuel = Mathf.Clamp01(shieldFuel);
 		}
@@ -66,7 +71,12 @@ public class PlayerShip : MonoBehaviour {
 
 		if(reloading) {
 			reloadProgress += RELOAD_RATE*Time.fixedDeltaTime;
+			reloadProgress = Mathf.Clamp01(reloadProgress);
 		}
+
+		healthBarUI.fillAmount = health;
+		shieldsBarUI.fillAmount = shieldFuel;
+		reloadBarUI.fillAmount = reloadProgress;
 	}
 
 	[SerializeField]
