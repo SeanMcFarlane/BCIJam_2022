@@ -158,6 +158,10 @@ public class PlayerShip : MonoBehaviour {
 		reloadBarUI.fillAmount = reloadProgress;
 	}
 
+	public void LateUpdate() {
+		turretPivot.localEulerAngles = new Vector3(0, 0, turretRotation);
+	}
+
 	[SerializeField]
 	public enum ShipSection {
 		STERN, BOW

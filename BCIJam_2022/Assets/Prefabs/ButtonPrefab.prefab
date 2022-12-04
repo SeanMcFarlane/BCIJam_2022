@@ -169,7 +169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 236, y: 236}
+  m_Size: {x: 256, y: 256}
   m_EdgeRadius: 0
 --- !u!114 &2098164038809467140
 MonoBehaviour:
@@ -951,8 +951,8 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 256
-  height: 256
+  width: 236
+  height: 236
   type: 1
   cornerRadiusMode: 0
   cornerRadii: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
