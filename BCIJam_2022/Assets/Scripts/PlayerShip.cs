@@ -9,6 +9,8 @@ public class PlayerShip : MonoBehaviour {
 	public static float RELOAD_RATE = 0.4f;
 	public static float SHOOT_CHARGE_RATE = 0.33f;
 
+	public static float TURRET_ROTATION_RATE = 5f;
+
 	public static float DAMAGE_PER_SHOT = 0.1f;
 	public static float SHIELD_DAMAGE_REDUCTION = 0.75f;
 
@@ -28,6 +30,8 @@ public class PlayerShip : MonoBehaviour {
 	public StatusBarUI shieldsBarUI;
 	public StatusBarUI reloadBarUI;
 
+	public float turretRotation = 90;
+	public float turretRotationGoal = 90;
 
 	public Transform[] shootPoints;
 	public Transform turretPivot;
@@ -43,6 +47,7 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	private void StartShootingCannon(ShipSection target) {
+		if(shipDestroyed) return;
 		if(reloadProgress < 1.0f) {
 			return;
 		}
@@ -50,15 +55,19 @@ public class PlayerShip : MonoBehaviour {
 		if(target == ShipSection.STERN) {
 			Vector3 shootVector = enemyShip.shootPoints[(int)ShipSection.STERN].position - turretPivot.position;
 			turretPivot.eulerAngles = new Vector3(0, 0, Get2DAngle(shootVector));
+			turretRotationGoal = turretPivot.localEulerAngles.z;
+			turretPivot.localEulerAngles = new Vector3(0, 0, turretRotation);
 		}
 		else if(target == ShipSection.BOW) {
 			Vector3 shootVector = enemyShip.shootPoints[(int)ShipSection.BOW].position - turretPivot.position;
 			turretPivot.eulerAngles = new Vector3(0, 0, Get2DAngle(shootVector));
+			turretRotationGoal = turretPivot.localEulerAngles.z;
+			turretPivot.localEulerAngles = new Vector3(0, 0, turretRotation);
 		}
 	}
 
 	public void StopShootingCannon() {
-		turretPivot.localEulerAngles = new Vector3(0, 0, 90);
+		turretRotationGoal = 90.0f;
 		chargingCannon = false;
 	}
 
@@ -82,10 +91,18 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	public void SetReloading(bool isReloading) {
+		if(shipDestroyed) {
+			reloading = false;
+			return;
+		}
 		reloading = isReloading;
 	}
 
 	public void SetShieldsOnline(bool areShieldsOnline) {
+		if(shipDestroyed) {
+			shieldsOnline = false;
+			return;
+		}
 		shieldsOnline = areShieldsOnline;
 	}
 
@@ -97,6 +114,7 @@ public class PlayerShip : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate() {
+
 		o_Animator.SetBool("ShieldsOnline", shieldsOnline);
 		o_Animator.SetBool("Reloading", reloading);
 
@@ -118,6 +136,19 @@ public class PlayerShip : MonoBehaviour {
 			reloadProgress += RELOAD_RATE*Time.fixedDeltaTime;
 			reloadProgress = Mathf.Clamp01(reloadProgress);
 		}
+
+		turretRotationGoal = Mathf.Clamp(turretRotationGoal, 0, 360);
+		turretRotation = Mathf.Clamp(turretRotation, 0, 360);
+		float turretRotationDelta = turretRotationGoal-turretRotation;
+		float turretRotationDelta2 = turretRotation-(360-turretRotationGoal);
+		if(Mathf.Abs(turretRotationDelta) > TURRET_ROTATION_RATE) {
+			turretRotation += (turretRotationDelta < turretRotationDelta2) ? TURRET_ROTATION_RATE : -TURRET_ROTATION_RATE;
+		}
+		else {
+			turretRotation = turretRotationGoal;
+		}
+
+		turretPivot.localEulerAngles = new Vector3(0, 0, turretRotation);
 
 		healthBarUI.fillAmount = health;
 		shieldsBarUI.fillAmount = shieldFuel;
