@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &3095871 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3636126472517195413, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+  m_PrefabInstance: {fileID: 498016897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &18101093
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +271,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 3838.7168, y: 2160}
+  m_SizeDelta: {x: 3840, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21780990
 MonoBehaviour:
@@ -488,11 +493,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.76796
+  width: 95.8
   height: 1727.85
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.153593, y: 19.153593, z: 19.153593, w: 19.153593}
+  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -737,7 +742,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1783.3906
+  width: 1784
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -762,7 +767,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1783.3906
+    radialRadius: 1784
   useFill: 0
 --- !u!1 &176813358
 GameObject:
@@ -926,7 +931,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1919.3584
+  width: 1920
   height: 1080
   type: 2
   cornerRadiusMode: 0
@@ -1131,7 +1136,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1919.3584
+  width: 1920
   height: 1080
   type: 2
   cornerRadiusMode: 0
@@ -1459,6 +1464,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.w
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.x
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.z
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_text
       value: Attack Gun
@@ -1468,8 +1489,24 @@ PrefabInstance:
       value: 406.75
       objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_fontSizeMax
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286809087
       objectReference: {fileID: 0}
     - target: {fileID: 2877590334003154983, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadiusLL
@@ -1491,6 +1528,26 @@ PrefabInstance:
       propertyPath: affectShapesRectangleCorners
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: affectShapesRectangleCorners
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
       value: 256
@@ -1498,6 +1555,18 @@ PrefabInstance:
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: thickness
@@ -1526,6 +1595,18 @@ PrefabInstance:
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 0.5754717
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadii.w
@@ -1573,11 +1654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Pivot.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1585,7 +1666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.9
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1593,7 +1674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.9
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1659,6 +1740,38 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 927481219}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShootCannonAtBow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerShip, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
       value: 256
@@ -1672,6 +1785,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249572875425064091, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126223670483657046, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
@@ -1843,11 +1960,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 65.96796
+  width: 66
   height: 1698
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 6.5967956, y: 6.5967956, z: 6.5967956, w: 6.5967956}
+  cornerRadii: {x: 6.6, y: 6.6, z: 6.6, w: 6.6}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -1897,7 +2014,7 @@ RectTransform:
   m_GameObject: {fileID: 390489585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 420.39758, y: 420.39758, z: 1}
+  m_LocalScale: {x: 420.5381, y: 420.5381, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 56323697}
@@ -2051,15 +2168,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059622, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Name
-      value: ShipFab
+      value: LeftShip
       objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059623, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Pivot.x
@@ -2147,19 +2264,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 7028665229807116433, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2171,11 +2288,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7866769205755728813, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2185,6 +2314,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.4539795
       objectReference: {fileID: 0}
+    - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: enemyShip
+      value: 
+      objectReference: {fileID: 1131546584}
+    - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: shootPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: shootPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 3095871}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
 --- !u!224 &498016898 stripped
@@ -2269,15 +2410,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059622, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Name
-      value: ShipFab
+      value: RightShip
       objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059623, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Pivot.x
@@ -2289,7 +2430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059623, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059623, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2365,19 +2506,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 7028665229807116433, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2389,11 +2530,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1199.5989
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 7866769205755728813, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2403,6 +2544,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.4539795
       objectReference: {fileID: 0}
+    - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: enemyShip
+      value: 
+      objectReference: {fileID: 927481219}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
 --- !u!224 &541871957 stripped
@@ -2571,7 +2716,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -2596,7 +2741,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1001 &632585070
 PrefabInstance:
@@ -2825,7 +2970,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1919.3584
+  width: 1920
   height: 1080
   type: 2
   cornerRadiusMode: 0
@@ -2999,7 +3144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3265,11 +3410,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 65.96802
+  width: 66
   height: 1698
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 6.5968018, y: 6.5968018, z: 6.5968018, w: 6.5968018}
+  cornerRadii: {x: 6.6, y: 6.6, z: 6.6, w: 6.6}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -3453,7 +3598,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1783.3906
+  width: 1784
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -3478,7 +3623,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1783.3906
+    radialRadius: 1784
   useFill: 0
 --- !u!1 &746487842
 GameObject:
@@ -3985,11 +4130,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.76796
+  width: 95.8
   height: 1727.85
   type: 3
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.153593, y: 19.153593, z: 19.153593, w: 19.153593}
+  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
   thickness: 10
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -4447,11 +4592,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.76802
+  width: 95.8
   height: 1727.85
   type: 3
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.153605, y: 19.153605, z: 19.153605, w: 19.153605}
+  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
   thickness: 10
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -4485,6 +4630,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.w
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.x
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.z
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_text
       value: 'ATTACK
@@ -4496,8 +4657,24 @@ PrefabInstance:
       value: 406.75
       objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_fontSizeMax
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286809087
       objectReference: {fileID: 0}
     - target: {fileID: 2877590334003154983, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadiusLL
@@ -4519,6 +4696,26 @@ PrefabInstance:
       propertyPath: affectShapesRectangleCorners
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: affectShapesRectangleCorners
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
       value: 256
@@ -4526,6 +4723,18 @@ PrefabInstance:
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: thickness
@@ -4554,6 +4763,18 @@ PrefabInstance:
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 0.5754717
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadii.w
@@ -4687,6 +4908,38 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1131546584}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShootCannonAtBow
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerShip, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
       value: 256
@@ -4700,6 +4953,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249572875425064091, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126223670483657046, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
@@ -5070,6 +5327,17 @@ MonoBehaviour:
     radialOrigin: {x: 0, y: 0, z: 0}
     radialRadius: 1
   useFill: 0
+--- !u!114 &927481219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+  m_PrefabInstance: {fileID: 498016897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b53d758f072ec4c9ecee95dc61953b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1020742733
 GameObject:
   m_ObjectHideFlags: 0
@@ -5231,7 +5499,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -5256,7 +5524,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1 &1073748771
 GameObject:
@@ -5429,7 +5697,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1919.3584
+  width: 1920
   height: 2160
   type: 2
   cornerRadiusMode: 0
@@ -5456,6 +5724,17 @@ MonoBehaviour:
     radialOrigin: {x: 0, y: 0, z: 0}
     radialRadius: 1
   useFill: 0
+--- !u!114 &1131546584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+  m_PrefabInstance: {fileID: 541871956}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06b53d758f072ec4c9ecee95dc61953b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1137375466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,7 +5896,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -5642,7 +5921,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1001 &1258777627
 PrefabInstance:
@@ -5775,7 +6054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6558,11 +6837,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.76802
+  width: 95.8
   height: 1727.85
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.153605, y: 19.153605, z: 19.153605, w: 19.153605}
+  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -6879,7 +7158,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1783.3906
+  width: 1784
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -6904,7 +7183,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1783.3906
+    radialRadius: 1784
   useFill: 0
 --- !u!1 &1652114838
 GameObject:
@@ -7067,7 +7346,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -7092,7 +7371,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1 &1654020414
 GameObject:
@@ -7255,7 +7534,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -7280,7 +7559,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1 &1673411145
 GameObject:
@@ -7480,7 +7759,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -7505,7 +7784,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1 &1725684856
 GameObject:
@@ -7669,7 +7948,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1919.3584
+  width: 1920
   height: 1080
   type: 2
   cornerRadiusMode: 0
@@ -7846,11 +8125,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 541871957}
   - {fileID: 652108991}
   - {fileID: 1258777628}
   - {fileID: 363160055}
   - {fileID: 1931437371}
-  - {fileID: 541871957}
   - {fileID: 176813359}
   - {fileID: 213063357}
   - {fileID: 1779096600}
@@ -7985,7 +8264,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1919.3584
+  width: 1920
   height: 2160
   type: 2
   cornerRadiusMode: 0
@@ -8173,7 +8452,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -8198,7 +8477,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1 &1902165732
 GameObject:
@@ -8657,6 +8936,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.w
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.x
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.z
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_text
       value: 'Attack Shields
@@ -8668,8 +8963,24 @@ PrefabInstance:
       value: 366.55
       objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_fontSizeMax
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286809087
       objectReference: {fileID: 0}
     - target: {fileID: 2877590334003154983, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadiusLL
@@ -8691,6 +9002,26 @@ PrefabInstance:
       propertyPath: affectShapesRectangleCorners
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: affectShapesRectangleCorners
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
       value: 256
@@ -8698,6 +9029,18 @@ PrefabInstance:
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: thickness
@@ -8726,6 +9069,18 @@ PrefabInstance:
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 0.5754717
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadii.w
@@ -8773,11 +9128,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8785,7 +9140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMin.x
@@ -8793,7 +9148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.1
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249427355749, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8859,6 +9214,38 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 927481219}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShootCannonAtStern
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerShip, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
       value: 256
@@ -8872,6 +9259,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249572875425064091, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126223670483657046, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
@@ -8893,6 +9284,22 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.w
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.x
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797474261770595592, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadii.z
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_text
       value: ATTACK SHIELDS
@@ -8902,8 +9309,24 @@ PrefabInstance:
       value: 366.55
       objectReference: {fileID: 0}
     - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.514151
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_fontSizeMax
       value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957289886262883328, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286809087
       objectReference: {fileID: 0}
     - target: {fileID: 2877590334003154983, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadiusLL
@@ -8925,6 +9348,26 @@ PrefabInstance:
       propertyPath: affectShapesRectangleCorners
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusLR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUL
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: cornerRadiusUR
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946259766857587892, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: affectShapesRectangleCorners
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: width
       value: 256
@@ -8932,6 +9375,18 @@ PrefabInstance:
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5347067585688816642, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: thickness
@@ -8960,6 +9415,18 @@ PrefabInstance:
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: height
       value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.b
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.g
+      value: 0.14929691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: color.r
+      value: 0.5754717
       objectReference: {fileID: 0}
     - target: {fileID: 6204130249317908161, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: cornerRadii.w
@@ -9093,6 +9560,38 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1131546584}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ShootCannonAtStern
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerShip, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6455027018449245609, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: mouseDownEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6510071413273229242, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Size.x
       value: 256
@@ -9106,6 +9605,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7249572875425064091, guid: 269572393bf885742a4dd20168bb2590, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8126223670483657046, guid: 269572393bf885742a4dd20168bb2590, type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
@@ -9277,7 +9780,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1783.3906
+  width: 1784
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -9302,7 +9805,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1783.3906
+    radialRadius: 1784
   useFill: 0
 --- !u!1 &2031281744
 GameObject:
@@ -9465,7 +9968,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1813.3906
+  width: 1814
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -9490,7 +9993,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1813.3906
+    radialRadius: 1814
   useFill: 0
 --- !u!1001 &2087005803
 PrefabInstance:
