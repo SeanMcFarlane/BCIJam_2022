@@ -715,6 +715,8 @@ MonoBehaviour:
   healthBarUI: {fileID: 0}
   shieldsBarUI: {fileID: 0}
   reloadBarUI: {fileID: 0}
+  turretRotation: 90
+  turretRotationGoal: 90
   shootPoints:
   - {fileID: 3636126472517195413}
   - {fileID: 6671440407654009574}
