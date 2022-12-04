@@ -159,7 +159,9 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	public void LateUpdate() {
-		turretPivot.localEulerAngles = new Vector3(0, 0, turretRotation);
+		if(!shipDestroyed) {
+			turretPivot.localEulerAngles = new Vector3(0, 0, turretRotation);
+		}
 	}
 
 	[SerializeField]
