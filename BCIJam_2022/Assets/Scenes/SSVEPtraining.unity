@@ -2117,6 +2117,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1200
       objectReference: {fileID: 0}
+    - target: {fileID: 3425799434340346224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: audioClips.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3497943210516779996, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_SortingLayer
       value: 1
@@ -2157,6 +2161,10 @@ PrefabInstance:
       propertyPath: shieldsBarUI
       value: 
       objectReference: {fileID: 18101096}
+    - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: o_VictoryText
+      value: 
+      objectReference: {fileID: 1917395177}
     - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: o_ReloadButtonText
       value: 
@@ -2411,6 +2419,10 @@ PrefabInstance:
       propertyPath: shieldsBarUI
       value: 
       objectReference: {fileID: 796916425}
+    - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: o_VictoryText
+      value: 
+      objectReference: {fileID: 1750134037}
     - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: o_ReloadButtonText
       value: 

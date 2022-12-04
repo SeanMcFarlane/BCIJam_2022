@@ -12,7 +12,7 @@ public class PlayerShip : MonoBehaviour {
 
 	public static float TURRET_ROTATION_RATE = 5f;
 
-	public static float DAMAGE_PER_SHOT = 0.1f;
+	public static float DAMAGE_PER_SHOT = 0.21f;
 	public static float SHIELD_DAMAGE_REDUCTION = 0.75f;
 
 	public static float MODULE_DAMAGE_DISABLE_TIME = 2.5f;
@@ -100,12 +100,13 @@ public class PlayerShip : MonoBehaviour {
 		}
 		else {
 			o_Animator.Play("ShipHit");
-			if(section == ShipSection.BOW) {
-				gunDisabledTime = MODULE_DAMAGE_DISABLE_TIME;
-			}
-			else if(section == ShipSection.STERN) {
-				shieldDisabledTime = MODULE_DAMAGE_DISABLE_TIME;
-			}
+		}
+
+		if(section == ShipSection.BOW) {
+			gunDisabledTime = MODULE_DAMAGE_DISABLE_TIME;
+		}
+		else if(section == ShipSection.STERN) {
+			shieldDisabledTime = MODULE_DAMAGE_DISABLE_TIME;
 		}
 
 		health -= damage;

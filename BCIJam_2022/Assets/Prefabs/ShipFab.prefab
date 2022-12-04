@@ -715,13 +715,21 @@ MonoBehaviour:
   healthBarUI: {fileID: 0}
   shieldsBarUI: {fileID: 0}
   reloadBarUI: {fileID: 0}
+  o_ReloadButtonText: {fileID: 0}
+  o_ShieldButtonText: {fileID: 0}
+  gunDisabledTime: 0
+  shieldDisabledTime: 0
+  defaultReloadText: 
+  defaultShieldText: 
   turretRotation: 90
   turretRotationGoal: 90
   shootPoints:
   - {fileID: 3636126472517195413}
   - {fileID: 6671440407654009574}
   turretPivot: {fileID: 7282445128214621318}
+  aimedSection: 2
   enemyShip: {fileID: 0}
+  o_VictoryText: {fileID: 0}
 --- !u!95 &7298577479246702097
 Animator:
   serializedVersion: 4
