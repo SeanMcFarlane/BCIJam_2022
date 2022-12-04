@@ -20,6 +20,8 @@ public class Interactable : MonoBehaviour {
 	*/
 	public GameObject localPlayer;
 
+	[SerializeField] public KeyCode keyboardPressCode;
+
 	[SerializeField] private bool useMouseEvents = false;
 	[ShowIf("useMouseEvents"), FoldoutGroup("Mouse", Expanded = true)]
 	[SerializeField] public GameObjEvent mouseEnterEvent;
@@ -115,6 +117,13 @@ public class Interactable : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
+		if(Input.GetKeyDown(keyboardPressCode)) {
+			OnMouseDown();
+		}
+		if(Input.GetKeyUp(keyboardPressCode)) {
+			OnMouseUp();
+		}
+
 		if(interactor != null && !isHighlighted) {
 			isHighlighted = true;
 			interactSelectEvent.Invoke(interactor);

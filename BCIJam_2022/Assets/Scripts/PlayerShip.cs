@@ -138,11 +138,14 @@ public class PlayerShip : MonoBehaviour {
 		}
 
 		turretRotationGoal = Mathf.Clamp(turretRotationGoal, 0, 360);
-		turretRotation = Mathf.Clamp(turretRotation, 0, 360);
-		float turretRotationDelta = turretRotationGoal-turretRotation;
+		turretRotation = turretRotation % 360;
+		float turretRotationDelta1 = turretRotationGoal-turretRotation;
 		float turretRotationDelta2 = turretRotation-(360-turretRotationGoal);
+
+		float turretRotationDelta = Mathf.Abs(turretRotationDelta1) < Mathf.Abs(turretRotationDelta2) ? turretRotationDelta1 : turretRotationDelta2;
+
 		if(Mathf.Abs(turretRotationDelta) > TURRET_ROTATION_RATE) {
-			turretRotation += (turretRotationDelta < turretRotationDelta2) ? TURRET_ROTATION_RATE : -TURRET_ROTATION_RATE;
+			turretRotation += (turretRotationDelta > 0) ? TURRET_ROTATION_RATE : -TURRET_ROTATION_RATE;
 		}
 		else {
 			turretRotation = turretRotationGoal;

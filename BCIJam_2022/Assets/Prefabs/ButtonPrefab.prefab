@@ -53,6 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   localPlayer: {fileID: 0}
+  keyboardPressCode: 0
   useMouseEvents: 1
   mouseEnterEvent:
     m_PersistentCalls:
@@ -168,7 +169,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 256, y: 256}
+  m_Size: {x: 236, y: 236}
   m_EdgeRadius: 0
 --- !u!114 &2098164038809467140
 MonoBehaviour:
