@@ -22,6 +22,7 @@ public class PlayerShip : MonoBehaviour {
 	[ReadOnly] public bool chargingCannon = false;
 	[ReadOnly] public bool shieldsOnline = false;
 	[ReadOnly] public bool reloading = false;
+	[ReadOnly] public bool shipDestroyed = false;
 
 	public StatusBarUI healthBarUI;
 	public StatusBarUI shieldsBarUI;
