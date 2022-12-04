@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,7 +266,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 3840, y: 2160}
+  m_SizeDelta: {x: 3899.9407, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21780990
 MonoBehaviour:
@@ -488,11 +488,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.8
+  width: 97.29854
   height: 1727.85
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
+  cornerRadii: {x: 19.459707, y: 19.459707, z: 19.459707, w: 19.459707}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -915,7 +915,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1784
+  width: 1812.4718
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1784
+    radialRadius: 1812.4718
   useFill: 0
 --- !u!1 &241457864
 GameObject:
@@ -1775,11 +1775,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 66
+  width: 67.498535
   height: 1698
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 6.6, y: 6.6, z: 6.6, w: 6.6}
+  cornerRadii: {x: 6.7498536, y: 6.7498536, z: 6.7498536, w: 6.7498536}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -1829,7 +1829,7 @@ RectTransform:
   m_GameObject: {fileID: 390489585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 420.5381, y: 420.5381, z: 1}
+  m_LocalScale: {x: 421.875, y: 421.875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 56323697}
@@ -1983,11 +1983,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 902458633801205560, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Enabled
@@ -2103,19 +2103,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 3425799434340346224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: audioClips.Array.size
@@ -2135,11 +2135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 7866769205755728813, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2255,13 +2255,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1810424319}
     m_Modifications:
+    - target: {fileID: 182893949552496016, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 182893949552496016, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.g
+      value: 0.64528203
+      objectReference: {fileID: 0}
+    - target: {fileID: 182893949552496016, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 436561894831227244, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 902458633801205560, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Enabled
@@ -2361,19 +2373,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 1689913969188579737, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 1878709463818103727, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260361373167905934, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2597365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260361373167905934, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.g
+      value: 0.56892234
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260361373167905934, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799551661714762164, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799551661714762164, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8432686
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799551661714762164, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
       objectReference: {fileID: 0}
     - target: {fileID: 7028665229807116433, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2385,11 +2421,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 7282445128214621318, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1200
+      value: 1218.7316
       objectReference: {fileID: 0}
     - target: {fileID: 7866769205755728813, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2398,6 +2434,18 @@ PrefabInstance:
     - target: {fileID: 7866769205755728813, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0.4539795
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390676593489003837, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.b
+      value: 0.47058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390676593489003837, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7411727
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390676593489003837, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9529412
       objectReference: {fileID: 0}
     - target: {fileID: 9121461830959393224, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: enemyShip
@@ -2599,7 +2647,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -2624,7 +2672,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &606687680
 GameObject:
@@ -3381,11 +3429,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 66
+  width: 67.498535
   height: 1698
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 6.6, y: 6.6, z: 6.6, w: 6.6}
+  cornerRadii: {x: 6.7498536, y: 6.7498536, z: 6.7498536, w: 6.7498536}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -3580,7 +3628,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1784
+  width: 1812.4718
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -3605,7 +3653,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1784
+    radialRadius: 1812.4718
   useFill: 0
 --- !u!1 &746487842
 GameObject:
@@ -4112,11 +4160,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.8
+  width: 97.29854
   height: 1727.85
   type: 3
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
+  cornerRadii: {x: 19.459707, y: 19.459707, z: 19.459707, w: 19.459707}
   thickness: 10
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -4585,11 +4633,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.8
+  width: 97.29854
   height: 1727.85
   type: 3
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
+  cornerRadii: {x: 19.459707, y: 19.459707, z: 19.459707, w: 19.459707}
   thickness: 10
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -5578,7 +5626,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -5603,7 +5651,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &1021341700
 GameObject:
@@ -5963,7 +6011,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1920
+  width: 1949.9703
   height: 2160
   type: 2
   cornerRadiusMode: 0
@@ -6173,7 +6221,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -6198,7 +6246,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &1164841965
 GameObject:
@@ -7768,11 +7816,11 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 95.8
+  width: 97.29854
   height: 1727.85
   type: 1
   cornerRadiusMode: 0
-  cornerRadii: {x: 19.160002, y: 19.160002, z: 19.160002, w: 19.160002}
+  cornerRadii: {x: 19.459707, y: 19.459707, z: 19.459707, w: 19.459707}
   thickness: 0.1
   thicknessSpace: 0
   matchDashSpacingToSize: 1
@@ -8272,7 +8320,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1784
+  width: 1812.4718
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -8297,7 +8345,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1784
+    radialRadius: 1812.4718
   useFill: 0
 --- !u!1 &1652114838
 GameObject:
@@ -8460,7 +8508,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -8485,7 +8533,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &1654020414
 GameObject:
@@ -8648,7 +8696,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -8673,7 +8721,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &1673411145
 GameObject:
@@ -8873,7 +8921,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -8898,7 +8946,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &1750134037
 GameObject:
@@ -8913,7 +8961,7 @@ GameObject:
   - component: {fileID: 1750134039}
   - component: {fileID: 1750134041}
   m_Layer: 0
-  m_Name: YellowVictoryText
+  m_Name: OrangeVictoryText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8959,7 +9007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Yellow ship won!!!
+  m_text: Orange ship won!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4557390daab2e844db73e11286e1793c, type: 2}
   m_sharedMaterial: {fileID: 8801666503283232777, guid: 4557390daab2e844db73e11286e1793c, type: 2}
@@ -9555,7 +9603,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1920
+  width: 1949.9703
   height: 2160
   type: 2
   cornerRadiusMode: 0
@@ -9743,7 +9791,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 3
   cornerRadiusMode: 0
@@ -9768,7 +9816,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1 &1902165732
 GameObject:
@@ -11178,7 +11226,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1784
+  width: 1812.4718
   height: 68
   type: 1
   cornerRadiusMode: 0
@@ -11203,7 +11251,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -34, z: -0}
     linearEnd: {x: 0, y: 34, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1784
+    radialRadius: 1812.4718
   useFill: 0
 --- !u!1 &1949768599
 GameObject:
@@ -11404,7 +11452,7 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 1814
+  width: 1842.4718
   height: 98
   type: 1
   cornerRadiusMode: 0
@@ -11429,7 +11477,7 @@ MonoBehaviour:
     linearStart: {x: -0, y: -49, z: -0}
     linearEnd: {x: 0, y: 49, z: 0}
     radialOrigin: {x: 0, y: 0, z: 0}
-    radialRadius: 1814
+    radialRadius: 1842.4718
   useFill: 0
 --- !u!1001 &2087005803
 PrefabInstance:
