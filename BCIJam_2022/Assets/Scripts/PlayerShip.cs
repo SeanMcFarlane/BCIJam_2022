@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerShip : MonoBehaviour {
@@ -13,6 +14,8 @@ public class PlayerShip : MonoBehaviour {
 
 	public static float DAMAGE_PER_SHOT = 0.1f;
 	public static float SHIELD_DAMAGE_REDUCTION = 0.75f;
+
+	public static float MODULE_DAMAGE_DISABLE_TIME = 2.5f;
 
 	[ReadOnly] public Animator o_Animator;
 	[ReadOnly] public Animator o_TurretAnimator;
@@ -30,13 +33,26 @@ public class PlayerShip : MonoBehaviour {
 	public StatusBarUI shieldsBarUI;
 	public StatusBarUI reloadBarUI;
 
+	public TextMeshPro o_ReloadButtonText;
+	public TextMeshPro o_ShieldButtonText;
+
+	public float gunDisabledTime = 0.0f;
+	public float shieldDisabledTime = 0.0f;
+	[ReadOnly] public string defaultReloadText;
+	[ReadOnly] public string defaultShieldText;
+
+
 	public float turretRotation = 90;
 	public float turretRotationGoal = 90;
 
 	public Transform[] shootPoints;
 	public Transform turretPivot;
 
+	[ReadOnly] [SerializeField] ShipSection aimedSection = ShipSection.NONE;
+
 	public PlayerShip enemyShip;
+
+	public GameObject o_VictoryText;
 
 	public void ShootCannonAtStern() {
 		StartShootingCannon(ShipSection.STERN);
@@ -47,11 +63,12 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	private void StartShootingCannon(ShipSection target) {
-		if(shipDestroyed) return;
+		if(shipDestroyed || gunDisabledTime > 0) return;
 		if(reloadProgress < 1.0f) {
 			return;
 		}
 		chargingCannon = true;
+		aimedSection = target;
 		if(target == ShipSection.STERN) {
 			Vector3 shootVector = enemyShip.shootPoints[(int)ShipSection.STERN].position - turretPivot.position;
 			turretPivot.eulerAngles = new Vector3(0, 0, Get2DAngle(shootVector));
@@ -67,31 +84,41 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	public void StopShootingCannon() {
+		aimedSection = ShipSection.NONE;
 		turretRotationGoal = 90.0f;
 		chargingCannon = false;
 	}
 
 	public void CannonFiredSuccessfully() {
 		reloadProgress = 0.0f;
-		float damage = DAMAGE_PER_SHOT;
-		if(enemyShip.shieldsOnline) {
-			damage *= 1.0f-SHIELD_DAMAGE_REDUCTION;
-		}
-		enemyShip.GotHit(damage);
+		enemyShip.GotHit(DAMAGE_PER_SHOT, aimedSection);
 	}
 
-	public void GotHit(float damage) {
-		health -= damage;
-		if(!shieldsOnline) {
-			o_Animator.Play("ShipHit");
+	public void GotHit(float damage, ShipSection section) {
+		if(shieldsOnline) {
+			damage *= 1.0f-SHIELD_DAMAGE_REDUCTION;
 		}
+		else {
+			o_Animator.Play("ShipHit");
+			if(section == ShipSection.BOW) {
+				gunDisabledTime = MODULE_DAMAGE_DISABLE_TIME;
+			}
+			else if(section == ShipSection.STERN) {
+				shieldDisabledTime = MODULE_DAMAGE_DISABLE_TIME;
+			}
+		}
+
+		health -= damage;
+
 		if(health <= 0.0f) {
 			o_Animator.Play("ShipExplode");
+			shipDestroyed = true;
+			enemyShip.o_VictoryText.SetActive(true);
 		}
 	}
 
 	public void SetReloading(bool isReloading) {
-		if(shipDestroyed) {
+		if(shipDestroyed || gunDisabledTime > 0) {
 			reloading = false;
 			return;
 		}
@@ -99,7 +126,7 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	public void SetShieldsOnline(bool areShieldsOnline) {
-		if(shipDestroyed) {
+		if(shipDestroyed || shieldDisabledTime > 0) {
 			shieldsOnline = false;
 			return;
 		}
@@ -108,12 +135,39 @@ public class PlayerShip : MonoBehaviour {
 
 	// Start is called before the first frame update
 	void Start() {
+		defaultReloadText = o_ReloadButtonText.text;
+		defaultShieldText = o_ShieldButtonText.text;
+
 		o_Animator = GetComponent<Animator>();
 		o_TurretAnimator = turretPivot.GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	void FixedUpdate() {
+
+		gunDisabledTime -= Time.fixedDeltaTime;
+		gunDisabledTime = Mathf.Clamp(gunDisabledTime, 0, float.MaxValue);
+
+		shieldDisabledTime -= Time.fixedDeltaTime;
+		shieldDisabledTime = Mathf.Clamp(shieldDisabledTime, 0, float.MaxValue);
+
+
+		if(shieldDisabledTime > 0) {
+			shieldsOnline = false;
+			o_ShieldButtonText.text = "X\n\nDISABLED";
+		}
+		else {
+			o_ShieldButtonText.text = defaultShieldText;
+		}
+
+		if(gunDisabledTime > 0) {
+			chargingCannon = false;
+			reloading = false;
+			o_ReloadButtonText.text = "X\n\nDISABLED";
+		}
+		else {
+			o_ReloadButtonText.text = defaultReloadText;
+		}
 
 		o_Animator.SetBool("ShieldsOnline", shieldsOnline);
 		o_Animator.SetBool("Reloading", reloading);
@@ -166,7 +220,7 @@ public class PlayerShip : MonoBehaviour {
 
 	[SerializeField]
 	public enum ShipSection {
-		STERN, BOW
+		STERN, BOW, NONE
 	}
 
 	public static float Get2DAngle(Vector2 vector2) {// Get angle, from -180 to +180 degrees. Degree offset to horizontal right.
