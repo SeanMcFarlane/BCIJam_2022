@@ -430,6 +430,12 @@ MonoBehaviour:
   audioClips:
   - clip: {fileID: 8300000, guid: 7c90a1ff27cc1a744a6d9e107a4673b1, type: 3}
     volume: 0.5
+  - clip: {fileID: 8300000, guid: 8cb4a5039301fd84890cd14add5a061a, type: 3}
+    volume: 0.5
+  - clip: {fileID: 8300000, guid: 909c6636fce06c347a3cee12b13a862f, type: 3}
+    volume: 0.5
+  - clip: {fileID: 8300000, guid: c3b37a1582df7ad49b39d89b1953f4b5, type: 3}
+    volume: 0.5
 --- !u!1 &1583005508916591232
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +711,7 @@ MonoBehaviour:
   chargingCannon: 0
   shieldsOnline: 0
   reloading: 0
+  shipDestroyed: 0
   healthBarUI: {fileID: 0}
   shieldsBarUI: {fileID: 0}
   reloadBarUI: {fileID: 0}
