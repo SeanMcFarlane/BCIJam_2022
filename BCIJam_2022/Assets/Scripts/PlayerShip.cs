@@ -58,6 +58,7 @@ public class PlayerShip : MonoBehaviour {
 
 	public void StopShootingCannon() {
 		turretPivot.localEulerAngles = new Vector3(0, 0, 90);
+		chargingCannon = false;
 	}
 
 	public void CannonFiredSuccessfully() {
@@ -66,7 +67,12 @@ public class PlayerShip : MonoBehaviour {
 		if(enemyShip.shieldsOnline) {
 			damage *= 1.0f-SHIELD_DAMAGE_REDUCTION;
 		}
-		enemyShip.health -= damage;
+		enemyShip.GotHit(damage);
+	}
+
+	public void GotHit(float damage) {
+		health -= damage;
+		o_Animator.Play("ShipHit");
 	}
 
 	public void SetReloading(bool isReloading) {
