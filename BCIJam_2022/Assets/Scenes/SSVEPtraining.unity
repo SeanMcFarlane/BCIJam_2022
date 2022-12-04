@@ -2391,6 +2391,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1200
       objectReference: {fileID: 0}
+    - target: {fileID: 902458633801205560, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 983677495021238364, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1583005509266059622, guid: 5089a21df01255545bed9364c3d2e3ab, type: 3}
       propertyPath: m_Name
       value: RightShip
@@ -3906,9 +3914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Shield Power
-
-'
+  m_text: Shield Battery
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3e6e96639f396f47bfd9f30f747bdab, type: 2}
   m_sharedMaterial: {fileID: -7370319315858789789, guid: b3e6e96639f396f47bfd9f30f747bdab, type: 2}
@@ -5106,7 +5112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shield Power
+  m_text: Shield Battery
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3e6e96639f396f47bfd9f30f747bdab, type: 2}
   m_sharedMaterial: {fileID: -7370319315858789789, guid: b3e6e96639f396f47bfd9f30f747bdab, type: 2}
@@ -8208,6 +8214,7 @@ GameObject:
   - component: {fileID: 1779096600}
   - component: {fileID: 1779096602}
   - component: {fileID: 1779096601}
+  - component: {fileID: 1779096603}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -8299,6 +8306,26 @@ MonoBehaviour:
   controlDiscRadius: 0
   controlDiscThickness: 0
   discThicknessScale: 0
+--- !u!95 &1779096603
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779096599}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c399a434f61f4da42a45448955ee63d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1810424318
 GameObject:
   m_ObjectHideFlags: 0

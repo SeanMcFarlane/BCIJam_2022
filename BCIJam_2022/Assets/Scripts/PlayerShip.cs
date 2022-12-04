@@ -72,7 +72,12 @@ public class PlayerShip : MonoBehaviour {
 
 	public void GotHit(float damage) {
 		health -= damage;
-		o_Animator.Play("ShipHit");
+		if(!shieldsOnline) {
+			o_Animator.Play("ShipHit");
+		}
+		if(health <= 0.0f) {
+			o_Animator.Play("ShipExplode");
+		}
 	}
 
 	public void SetReloading(bool isReloading) {
@@ -103,6 +108,9 @@ public class PlayerShip : MonoBehaviour {
 		else {
 			shieldFuel += SHIELD_DRAIN_RATE*Time.fixedDeltaTime;
 			shieldFuel = Mathf.Clamp01(shieldFuel);
+			if(shieldFuel <= 0.0f) {
+				shieldsOnline = false;
+			}
 		}
 
 		if(reloading) {
