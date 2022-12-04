@@ -6,12 +6,20 @@ using UnityEngine;
 public class PlayerShip : MonoBehaviour {
 	public static float SHIELD_REFUEL_RATE = 0.1f;
 	public static float SHIELD_DRAIN_RATE = -0.5f;
-	public static float RELOAD_RATE = 0.2f;
+	public static float RELOAD_RATE = 0.4f;
+	public static float SHOOT_CHARGE_RATE = 0.33f;
+
+	public static float DAMAGE_PER_SHOT = 0.1f;
+	public static float SHIELD_DAMAGE_REDUCTION = 0.75f;
+
+	[ReadOnly] public Animator o_Animator;
+	[ReadOnly] public Animator o_TurretAnimator;
 
 	[ReadOnly] public float reloadProgress = 0;
 	[ReadOnly] public float health = 1;
 	[ReadOnly] public float shieldFuel = 1;
 
+	[ReadOnly] public bool chargingCannon = false;
 	[ReadOnly] public bool shieldsOnline = false;
 	[ReadOnly] public bool reloading = false;
 
@@ -26,14 +34,18 @@ public class PlayerShip : MonoBehaviour {
 	public PlayerShip enemyShip;
 
 	public void ShootCannonAtStern() {
-		ShootCannon(ShipSection.STERN);
+		StartShootingCannon(ShipSection.STERN);
 	}
 
 	public void ShootCannonAtBow() {
-		ShootCannon(ShipSection.BOW);
+		StartShootingCannon(ShipSection.BOW);
 	}
 
-	private void ShootCannon(ShipSection target) {
+	private void StartShootingCannon(ShipSection target) {
+		if(reloadProgress < 1.0f) {
+			return;
+		}
+		chargingCannon = true;
 		if(target == ShipSection.STERN) {
 			Vector3 shootVector = enemyShip.shootPoints[(int)ShipSection.STERN].position - turretPivot.position;
 			turretPivot.eulerAngles = new Vector3(0, 0, Get2DAngle(shootVector));
@@ -42,7 +54,19 @@ public class PlayerShip : MonoBehaviour {
 			Vector3 shootVector = enemyShip.shootPoints[(int)ShipSection.BOW].position - turretPivot.position;
 			turretPivot.eulerAngles = new Vector3(0, 0, Get2DAngle(shootVector));
 		}
+	}
+
+	public void StopShootingCannon() {
+		turretPivot.localEulerAngles = new Vector3(0, 0, 90);
+	}
+
+	public void CannonFiredSuccessfully() {
 		reloadProgress = 0.0f;
+		float damage = DAMAGE_PER_SHOT;
+		if(enemyShip.shieldsOnline) {
+			damage *= 1.0f-SHIELD_DAMAGE_REDUCTION;
+		}
+		enemyShip.health -= damage;
 	}
 
 	public void SetReloading(bool isReloading) {
@@ -55,11 +79,17 @@ public class PlayerShip : MonoBehaviour {
 
 	// Start is called before the first frame update
 	void Start() {
-
+		o_Animator = GetComponent<Animator>();
+		o_TurretAnimator = turretPivot.GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	void FixedUpdate() {
+		o_Animator.SetBool("ShieldsOnline", shieldsOnline);
+		o_Animator.SetBool("Reloading", reloading);
+
+		o_TurretAnimator.SetBool("ChargingCannon", chargingCannon);
+
 		if(!shieldsOnline) {
 			shieldFuel += SHIELD_REFUEL_RATE*Time.fixedDeltaTime;
 			shieldFuel = Mathf.Clamp01(shieldFuel);
