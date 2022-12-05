@@ -54,6 +54,7 @@ namespace Assets.LSL4Unity.EditorExtensions {
 			Debug.Log("[LSL BUILD Hook] Delete obsolete file: " + obsoleteFile);
 
 			File.Delete(obsoleteFile);
+			File.Delete(Path.Combine(pluginDirectory, LIB_LSL_NAME + fileEnding));
 
 			var sourceFile = Path.Combine(pluginDirectory, sourceName + fileEnding);
 
