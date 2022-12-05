@@ -32,6 +32,7 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 	BoxCollider2D o_BoxCollider;
 	CircleCollider2D o_CircleCollider;
 	SpriteRenderer o_SpriteRenderer;
+	ParticleSystem o_ParticleSystem;
 
 	bool hasShapesPolygon = false;
 	bool hasShapesRect = false;
@@ -40,6 +41,7 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 	bool hasBoxCollider = false;
 	bool hasCircleCollider = false;
 	bool hasSpriteRenderer = false;
+	bool hasParticleSystem = false;
 
 	private void VerifyInitialized() {
 		if(initialized) return;
@@ -68,6 +70,10 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 		o_SpriteRenderer = GetComponent<SpriteRenderer>();
 		hasSpriteRenderer = (o_SpriteRenderer != null);
 		if(!hasSpriteRenderer) affectSpriteRenderer = false;
+
+		o_ParticleSystem = GetComponent<ParticleSystem>();
+		hasParticleSystem = (o_ParticleSystem != null);
+		if(!hasParticleSystem) affectParticleSystem = false;
 
 		o_ShapesLine = GetComponent<Line>();
 		hasShapesLine = (o_ShapesLine != null);
@@ -124,6 +130,10 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 	[FoldoutGroup("Affected components")]
 	public bool affectSpriteRenderer = false;
 
+	[ShowIf("hasParticleSystem")]
+	[FoldoutGroup("Affected components")]
+	public bool affectParticleSystem = false;
+
 	[ShowIf("affectShapesPolygon")]
 	public bool polygonOriginIsCorner = true;
 	[ShowIf("affectShapesPolygon")]
@@ -166,6 +176,9 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 	[ShowIf("affectSpriteRenderer")]
 	public bool preserveSpriteAspect;
 
+	[ShowIf("affectParticleSystem")]
+	public float particleScale = 1.0f;
+
 	[ShowIf("affectShapesDisc")]
 	public bool controlDiscRadius;
 	[ShowIf("affectShapesDisc")]
@@ -189,6 +202,9 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 
 		o_SpriteRenderer = GetComponent<SpriteRenderer>();
 		hasSpriteRenderer = (o_SpriteRenderer != null);
+
+		o_ParticleSystem = GetComponent<ParticleSystem>();
+		hasParticleSystem = (o_ParticleSystem != null);
 
 		//if(updateOnValidate) {
 		//	ConformAll(true);
@@ -229,6 +245,10 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 
 		if(hasSpriteRenderer && affectSpriteRenderer) {
 			ConformSpriteRenderer(o_SpriteRenderer);
+		}
+
+		if(hasParticleSystem && affectParticleSystem) {
+			ConformParticleSystem(o_ParticleSystem);
 		}
 
 		if(propagateToChildren) {
@@ -388,6 +408,15 @@ public class RectTransformUniversalConformer : MonoBehaviour {
 
 #if UNITY_EDITOR
 		EditorUtility.SetDirty(sr);
+		EditorUtility.SetDirty(gameObject);
+#endif
+	}
+
+	public void ConformParticleSystem(ParticleSystem ps) {
+		float scale = Mathf.Max(o_Rect.rect.width, o_Rect.rect.height)*particleScale;
+		transform.localScale = new Vector3(scale, scale, transform.localScale.z);
+#if UNITY_EDITOR
+		EditorUtility.SetDirty(ps);
 		EditorUtility.SetDirty(gameObject);
 #endif
 	}
