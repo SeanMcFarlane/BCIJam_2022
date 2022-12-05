@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ReturnToMainMenu : MonoBehaviour {
-	static float timeTilBootToMainMenu = 5.0f;
+	float timeTilBootToMainMenu = 5.0f;
 
 	public void FixedUpdate() {
 		timeTilBootToMainMenu -= Time.fixedDeltaTime;
