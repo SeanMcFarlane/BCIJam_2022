@@ -6,10 +6,19 @@ using UnityEngine.SceneManagement;
 public class ReturnToMainMenu : MonoBehaviour {
 	float timeTilBootToMainMenu = 5.0f;
 
+	public bool countdownActivated = true;
+
+	public void TriggerReturnToMainMenu() {
+		SceneManager.LoadScene("MainMenu");
+	}
+
 	public void FixedUpdate() {
+		if(!countdownActivated) {
+			return;
+		}
 		timeTilBootToMainMenu -= Time.fixedDeltaTime;
 		if(timeTilBootToMainMenu <= 0) {
-			SceneManager.LoadScene("MainMenu");
+			TriggerReturnToMainMenu();
 		}
 	}
 }
