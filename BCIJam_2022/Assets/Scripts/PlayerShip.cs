@@ -63,7 +63,7 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	private void StartShootingCannon(ShipSection target) {
-		if(shipDestroyed || gunDisabledTime > 0) return;
+		if(shipDestroyed || gunDisabledTime > 0 || shieldsOnline) return;
 		if(reloadProgress < 1.0f) {
 			return;
 		}
@@ -119,7 +119,7 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	public void SetReloading(bool isReloading) {
-		if(shipDestroyed || gunDisabledTime > 0) {
+		if(shipDestroyed || gunDisabledTime > 0 || shieldsOnline) {
 			reloading = false;
 			return;
 		}
@@ -127,7 +127,7 @@ public class PlayerShip : MonoBehaviour {
 	}
 
 	public void SetShieldsOnline(bool areShieldsOnline) {
-		if(shipDestroyed || shieldDisabledTime > 0) {
+		if(shipDestroyed || shieldDisabledTime > 0 || chargingCannon || reloading) {
 			shieldsOnline = false;
 			return;
 		}
