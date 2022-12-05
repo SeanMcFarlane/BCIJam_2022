@@ -763,7 +763,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   o_AudioSource: {fileID: 4841568572640431847}
-  audioClips: []
+  audioClips:
+  - clip: {fileID: 8300000, guid: 9a8efec3963cf4b4b8683c37e40f24f3, type: 3}
+    volume: 0.3
+  - clip: {fileID: 8300000, guid: 10d6b7122032db34cb633a87fca4f01b, type: 3}
+    volume: 0.2
+  - clip: {fileID: 8300000, guid: 769bd18a79137794ca374c7f93d9a4f5, type: 3}
+    volume: 0.2
 --- !u!82 &4841568572640431847
 AudioSource:
   m_ObjectHideFlags: 0
