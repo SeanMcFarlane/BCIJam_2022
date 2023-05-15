@@ -6,7 +6,7 @@ Developed by Sean McFarlane and Peter Friedrich
 #### Star Skirmish
 Players use a BCI to control one of two space ships, and attempt to defeat each other in spaceship combat. 
 
-<img src="documentation/star_skirmish_screen.png" width="50%" height="50%" />
+<img src="Documentation/star_skirmish_screen.png" width="50%" height="50%" />
 
 ## Attributions
 3rd Party Assets
